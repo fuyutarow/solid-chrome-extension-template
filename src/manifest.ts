@@ -3,7 +3,7 @@ import { ManifestType } from "@src/manifest-type";
 
 const manifest: ManifestType = {
   manifest_version: 3,
-  name: packageJson.name,
+  name: packageJson.displayName,
   version: packageJson.version,
   description: packageJson.description,
   options_page: "src/pages/options/index.html",

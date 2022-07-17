@@ -1,5 +1,4 @@
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
 import path, { resolve } from "path";
 import makeManifest from "./utils/plugins/make-manifest";
 import solidPlugin from 'vite-plugin-solid';

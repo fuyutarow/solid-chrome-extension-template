@@ -5,7 +5,6 @@
     "allowJs": false,
     "target": "esnext",
     "module": "esnext",
-    // "jsx": "react-jsx",
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
     "skipLibCheck": true,
