@@ -1,5 +1,4 @@
-import React from "react";
-import { createRoot } from "react-dom/client";
+import { render } from 'solid-js/web'
 import Newtab from "@pages/newtab/Newtab";
 import "@pages/newtab/index.css";
 
@@ -8,8 +7,7 @@ function init() {
   if (!appContainer) {
     throw new Error("Can not find AppContainer");
   }
-  const root = createRoot(appContainer);
-  root.render(<Newtab />);
+  render(Newtab, appContainer);
 }
 
 init();

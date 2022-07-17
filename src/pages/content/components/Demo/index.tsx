@@ -1,8 +1,8 @@
-import { createRoot } from "react-dom/client";
+import { render } from 'solid-js/web'
 import App from "@src/pages/content/components/Demo/app";
 
 const root = document.createElement("div");
 root.id = "chrome-extension-boilerplate-react-vite-content-view-root";
 document.body.append(root);
 
-createRoot(root).render(<App />);
+render(App, root);

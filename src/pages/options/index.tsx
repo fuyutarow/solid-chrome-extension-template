@@ -1,5 +1,4 @@
-import React from "react";
-import { createRoot } from "react-dom/client";
+import { render } from 'solid-js/web'
 import Options from "@pages/options/Options";
 import "@pages/options/index.css";
 
@@ -8,8 +7,7 @@ function init() {
   if (!appContainer) {
     throw new Error("Can not find AppContainer");
   }
-  const root = createRoot(appContainer);
-  root.render(<Options />);
+  render(Options, appContainer);
 }
 
 init();

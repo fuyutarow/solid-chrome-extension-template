@@ -1,5 +1,4 @@
-import React from "react";
-import { createRoot } from "react-dom/client";
+import { render } from 'solid-js/web'
 import Panel from "@pages/panel/Panel";
 import "@pages/panel/index.css";
 
@@ -8,8 +7,8 @@ function init() {
   if (!appContainer) {
     throw new Error("Can not find AppContainer");
   }
-  const root = createRoot(appContainer);
-  root.render(<Panel />);
+
+  render(Panel, appContainer);
 }
 
 init();

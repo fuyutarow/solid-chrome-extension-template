@@ -1,9 +1,8 @@
-import React from "react";
 import "@pages/panel/Panel.css";
 
-const Panel: React.FC = () => {
+const Panel = () => {
   return (
-    <div className="container">
+    <div class="container">
       <h1>Dev Tools Panel</h1>
     </div>
   );
