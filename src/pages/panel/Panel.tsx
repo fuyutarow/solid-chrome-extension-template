@@ -1,9 +1,23 @@
-import "@pages/panel/Panel.css";
+import logo from "@assets/img/logo.svg";
+import styles from "./Panel.module.css";
 
 const Panel = () => {
   return (
-    <div class="container">
-      <h1>Dev Tools Panel</h1>
+    <div class={styles.App}>
+      <header class={styles.header}>
+        <img src={logo} class={styles.logo} alt="logo" />
+        <p>
+          Edit <code>src/pages/panel/Panel.tsx</code> and save to reload.
+        </p>
+        <a
+          class={styles.link}
+          href="https://github.com/solidjs/solid"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn Solid
+        </a>
+      </header>
     </div>
   );
 };

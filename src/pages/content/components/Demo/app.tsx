@@ -1,9 +1,25 @@
-// import { useEffect } from "react";
+import logo from "@assets/img/logo.svg";
+import styles from "./App.module.css";
 
-export default function App() {
-  // useEffect(() => {
-  //   console.log("content view loaded");
-  // }, []);
+const App = () => {
+  return (
+    <div class={styles.App}>
+      <header class={styles.header}>
+        <img src={logo} class={styles.logo} alt="logo" />
+        <p>
+          Edit <code>src/pages/panel/Panel.tsx</code> and save to reload.
+        </p>
+        <a
+          class={styles.link}
+          href="https://github.com/solidjs/solid"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn Solid
+        </a>
+      </header>
+    </div>
+  );
+};
 
-  return <div class="content-view">content view</div>;
-}
+export default App;

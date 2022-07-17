@@ -1,13 +1,10 @@
-import { render } from 'solid-js/web'
-import Options from "@pages/options/Options";
-import "@pages/options/index.css";
+import { render } from "solid-js/web";
+import Option from "./Options";
+import "./index.css";
 
-function init() {
-  const appContainer = document.querySelector("#app-container");
-  if (!appContainer) {
-    throw new Error("Can not find AppContainer");
-  }
-  render(Options, appContainer);
+const appContainer = document.querySelector("#app-container");
+if (!appContainer) {
+  throw new Error("Can not find AppContainer");
 }
 
-init();
+render(Option, appContainer);

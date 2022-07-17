@@ -1,14 +1,10 @@
-import { render } from 'solid-js/web'
-import "@pages/popup/index.css";
-import Popup from "@pages/popup/Popup";
+import { render } from "solid-js/web";
+import "./index.css";
+import Popup from "./Popup";
 
-function init() {
-  const appContainer = document.querySelector("#app-container");
-  if (!appContainer) {
-    throw new Error("Can not find AppContainer");
-  }
-
-  render(Popup, appContainer);
+const appContainer = document.querySelector("#app-container");
+if (!appContainer) {
+  throw new Error("Can not find AppContainer");
 }
 
-init();
+render(Popup, appContainer);
