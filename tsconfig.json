@@ -39,6 +39,7 @@
     "src",
     "utils",
     "vite.config.ts",
-    "node_modules/@types"
+    "node_modules/@types",
+    "plugins"
   ]
 }

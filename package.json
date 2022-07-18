@@ -11,6 +11,7 @@
     "scripts": {
         "dev": "vite build -w",
         "build": "vite build",
+        "lint": "eslint . --fix -c .eslintrc --ext js,ts --ignore-pattern='!.*'",
         "dev:nodemon": "nodemon",
         "build:noemit": "tsc --noEmit && vite build",
         "test": "jest"
