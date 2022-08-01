@@ -1,15 +1,12 @@
 <div align="center">
 <img src="public/icon-128.png" alt="logo"/>
-<h1> Chrome Extension Boilerplate with<br/>React + Vite + TypeScript</h1>
+<h1> Chrome Extension Boilerplate with<br/>SolidJS + Vite + TypeScript</h1>
 
-![](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![](https://img.shields.io/badge/Typescript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![](https://badges.aleen42.com/src/vitejs.svg)
-![GitHub action badge](https://github.com/Jonghakseo/chrome-extension-boilerplate-react-vite/actions/workflows/build.yml/badge.svg)
-<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Jonghakseo/chrome-extension-boilerplate-react-viteFactions&count_bg=%23#222222&title_bg=%23#454545&title=😀&edge_flat=true" alt="hits"/>
+![GitHub action badge](https://github.com/fuyutarow/solid-chrome-extension-template/actions/workflows/build.yml/badge.svg)
 
-
-> This project is listed in the [Awesome Vite](https://github.com/vitejs/awesome-vite)
+<!-- > This project is listed in the [Awesome Vite](https://github.com/vitejs/awesome-vite) -->
 
 </div>
 
@@ -30,10 +27,9 @@ This boilerplate is made for creating chrome extensions using React and Typescri
 > The focus was on improving the build speed and development experience with Vite.
 
 ## Features <a name="features"></a>
-- [React 18](https://reactjs.org/)
+- [SolidJS](https://www.solidjs.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Jest](https://jestjs.io/)
-- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 - [Vite](https://vitejs.dev/)
 - [SASS](https://sass-lang.com/)
 - [ESLint](https://eslint.org/)
