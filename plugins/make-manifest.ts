@@ -18,8 +18,6 @@ export default function makeManifest(): PluginOption {
       const manifestPath = resolve(outDir, "manifest.json");
 
       fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
-
-      console.log(`Manifest file copy complete: ${manifestPath}`, "success");
     },
   };
 }
