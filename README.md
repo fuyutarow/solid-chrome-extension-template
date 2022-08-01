@@ -1,6 +1,6 @@
 <div align="center">
-<img src="public/icon-128.png" alt="logo"/>
-<h1> Chrome Extension Boilerplate with<br/>SolidJS + Vite + TypeScript</h1>
+<img width="128" src="https://www.solidjs.com/assets/logo.123b04bc.svg" alt="logo"/>
+<h1> Chrome Extension Boilerplate with<br/>SolidJS + Vite + TypeScript + Manifest V3 + Hot Relaod</h1>
 
 ![](https://img.shields.io/badge/Typescript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![](https://badges.aleen42.com/src/vitejs.svg)
@@ -9,17 +9,6 @@
 <!-- > This project is listed in the [Awesome Vite](https://github.com/vitejs/awesome-vite) -->
 
 </div>
-
-## Table of Contents
-
-- [Intro](#intro)
-- [Features](#features)
-- [Installation](#installation)
-  - [Procedures](#procedures)
-- [Screenshots](#screenshots)
-  - [NewTab](#newtab)
-  - [Popup](#popup)  
-- [Documents](#documents)
 
 
 ## Intro <a name="intro"></a>
@@ -35,6 +24,7 @@ This boilerplate is made for creating chrome extensions using React and Typescri
 - [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [Chrome Extension Manifest Version 3](https://developer.chrome.com/docs/extensions/mv3/intro/)
+- Hot Reload (Live reload)
 
 ## Installation <a name="installation"></a>
 
@@ -52,15 +42,7 @@ This boilerplate is made for creating chrome extensions using React and Typescri
 6. If you want to build in production, Just run `yarn build` or `npm run build`.
 
 ## Screenshots <a name="screenshots"></a>
-
-### New Tab <a name="newtab"></a>
-
-<img width="971" alt="스크린샷 2022-04-11 오전 2 22 00" src="https://user-images.githubusercontent.com/53500778/162631646-cd40976b-b737-43d0-8e6a-6ac090a2e2d4.png">
-
-### Popup <a name="popup"></a>
-
-<img width="305" alt="스크린샷 2022-04-11 오전 2 22 11" src="https://user-images.githubusercontent.com/53500778/162631660-d35c5f12-e0d7-4431-a020-97024cdda7a7.png">
-
+<img width="957" alt="image" src="https://user-images.githubusercontent.com/14998939/182227580-31e390cd-386b-426a-adba-e8a31a2f303d.png">
 
 
 ## Documents <a name="documents"></a>
@@ -69,8 +51,3 @@ This boilerplate is made for creating chrome extensions using React and Typescri
 - [Rollup](https://rollupjs.org/guide/en/)
 - [Rollup-plugin-chrome-extension](https://www.extend-chrome.dev/rollup-plugin)
 
-
-
----
-
-[Jonghakseo](https://nookpi.tistory.com/)
