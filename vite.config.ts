@@ -1,7 +1,7 @@
 import path, { resolve } from "path";
 import { defineConfig } from "vite";
 import solidPlugin from "vite-plugin-solid";
-import makeManifest from "./plugins/make-manifest";
+import makeManifest from "./utils/plugins/make-manifest";
 
 const root = resolve(__dirname, "src");
 const pagesDir = resolve(root, "pages");
