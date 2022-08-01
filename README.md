@@ -1,5 +1,5 @@
 <div align="center">
-<img width="128" src="https://www.solidjs.com/assets/logo.123b04bc.svg" alt="logo"/>
+<img width="128" src="/src/assets/img/logo.svg" alt="logo"/>
 <h1> Chrome Extension Boilerplate with<br/>SolidJS + Vite + TypeScript + Manifest V3 + Hot Relaod</h1>
 
 ![](https://img.shields.io/badge/Typescript-3178C6?style=flat-square&logo=typescript&logoColor=white)
