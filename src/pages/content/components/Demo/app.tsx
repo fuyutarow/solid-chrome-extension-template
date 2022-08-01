@@ -7,7 +7,7 @@ const App = () => {
       <header class={styles.header}>
         <img src={logo} class={styles.logo} alt="logo" />
         <p>
-          Edit <code>src/pages/panel/Panel.tsx</code> and save to reload.
+          Edit <code>src/pages/popup/Popup.tsx</code> and save to reload.
         </p>
         <a
           class={styles.link}

@@ -4,7 +4,7 @@
 
 ![](https://img.shields.io/badge/Typescript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![](https://badges.aleen42.com/src/vitejs.svg)
-![GitHub action badge](https://github.com/fuyutarow/solid-chrome-extension-template/actions/workflows/build.yml/badge.svg)
+<!-- ![GitHub action badge](https://github.com/fuyutarow/solid-chrome-extension-template/actions/workflows/build.yml/badge.svg) -->
 
 <!-- > This project is listed in the [Awesome Vite](https://github.com/vitejs/awesome-vite) -->
 
@@ -12,7 +12,7 @@
 
 
 ## Intro <a name="intro"></a>
-This boilerplate is made for creating chrome extensions using React and Typescript.
+This boilerplate is made for creating chrome extensions using SolidJS and Typescript.
 > The focus was on improving the build speed and development experience with Vite.
 
 ## Features <a name="features"></a>
