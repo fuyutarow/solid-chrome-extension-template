@@ -1,8 +1,8 @@
 import * as fs from "fs";
 import * as path from "path";
-import colorLog from "../log";
-import manifest from "../../src/manifest";
 import { PluginOption } from "vite";
+import manifest from "../../manifest.config";
+import colorLog from "../log";
 
 const { resolve } = path;
 

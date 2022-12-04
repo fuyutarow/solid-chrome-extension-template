@@ -1,7 +1,8 @@
+import { crx } from "@crxjs/vite-plugin";
 import path, { resolve } from "path";
 import { defineConfig } from "vite";
 import solidPlugin from "vite-plugin-solid";
-import makeManifest from "./utils/plugins/make-manifest";
+import manifest from "./manifest.config";
 
 const root = resolve(__dirname, "src");
 const pagesDir = resolve(root, "pages");
@@ -19,7 +20,7 @@ export default defineConfig({
       "@pages": pagesDir,
     },
   },
-  plugins: [solidPlugin(), makeManifest()],
+  plugins: [solidPlugin(), crx({ manifest })],
   publicDir,
   build: {
     outDir,
