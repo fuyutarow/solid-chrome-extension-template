@@ -1,5 +1,5 @@
 import { defineManifest } from "@crxjs/vite-plugin";
-import packageJson from "./package.json";
+import packageJson from "../package.json";
 
 // Convert from Semver (example: 0.1.0-beta6)
 const [major, minor, patch, label = "0"] = packageJson.version
@@ -29,7 +29,7 @@ const manifest = defineManifest(async () => ({
     {
       matches: ["http://*/*", "https://*/*", "<all_urls>"],
       js: ["src/pages/content/index.ts"],
-      css: ["assets/css/contentStyle.chunk.css"],
+      // css: ["assets/css/contentStyle.chunk.css"],
     },
   ],
   devtools_page: "src/pages/devtools/index.html",

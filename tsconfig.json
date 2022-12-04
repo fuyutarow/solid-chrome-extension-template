@@ -40,6 +40,6 @@
     "utils",
     "vite.config.ts",
     "node_modules/@types",
-    "manifest.config.ts"
+    "src/manifest.ts"
   ]
 }
