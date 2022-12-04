@@ -28,8 +28,7 @@ const manifest = defineManifest(async () => ({
   content_scripts: [
     {
       matches: ["http://*/*", "https://*/*", "<all_urls>"],
-      js: ["src/pages/content/index.ts"],
-      // css: ["assets/css/contentStyle.chunk.css"],
+      js: ["src/pages/content/index.tsx"],
     },
   ],
   devtools_page: "src/pages/devtools/index.html",
