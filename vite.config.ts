@@ -2,6 +2,7 @@ import { crx } from "@crxjs/vite-plugin";
 import { resolve } from "path";
 import { defineConfig } from "vite";
 import solidPlugin from "vite-plugin-solid";
+import WindiCSS from "vite-plugin-windicss";
 import manifest from "./src/manifest";
 
 const root = resolve(__dirname, "src");
@@ -13,6 +14,7 @@ const publicDir = resolve(__dirname, "public");
 const isDev = process.env.__DEV__ === "true";
 
 export default defineConfig({
+  plugins: [solidPlugin(), crx({ manifest }), WindiCSS()],
   resolve: {
     alias: {
       "@src": root,
@@ -20,6 +22,5 @@ export default defineConfig({
       "@pages": pagesDir,
     },
   },
-  plugins: [solidPlugin(), crx({ manifest })],
   publicDir,
 });

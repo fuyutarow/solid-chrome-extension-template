@@ -1,4 +1,5 @@
 import logo from "@assets/img/logo.svg";
+import "@src/styles/index.css";
 import styles from "./Newtab.module.css";
 
 const Newtab = () => {
@@ -6,7 +7,7 @@ const Newtab = () => {
     <div class={styles.App}>
       <header class={styles.header}>
         <img src={logo} class={styles.logo} alt="logo" />
-        <p>
+        <p class="font-bold">
           Edit <code>src/pages/newtab/Newtab.tsx</code> and save to reload.
         </p>
         <a
