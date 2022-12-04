@@ -41,32 +41,4 @@ const manifest = defineManifest(async () => ({
   ],
 }));
 
-// export default defineManifest(async (env) => ({
-//   manifest_version: 3,
-//   name: "mv3-solid-template",
-//   // up to four numbers separated by dots
-//   version: `${major}.${minor}.${patch}.${label}`,
-//   // semver is OK in "version_name"
-//   version_name: version,
-//   action: { default_popup: "index.html" },
-//   content_scripts: [
-//     {
-//       js: ["./src/contents/index.tsx"],
-//       matches: ["https://www.google.com/*"],
-//     },
-//   ],
-//   background: {
-//     service_worker: "src/background.ts",
-//   },
-//   permissions: ["identity", "tabs", "storage"],
-//   key: process.env.VITE_MV3_KEY,
-//   oauth2: {
-//     client_id: process.env.VITE_OAUTH2_CLIENT_ID ?? "",
-//     scopes: [
-//       "https://www.googleapis.com/auth/userinfo.email",
-//       "https://www.googleapis.com/auth/userinfo.profile",
-//     ],
-//   },
-// }));
-
 export default manifest;
