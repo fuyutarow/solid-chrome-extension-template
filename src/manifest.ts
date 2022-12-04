@@ -1,13 +1,20 @@
-import { ManifestType } from "@src/manifest-type";
+import { defineManifest } from "@crxjs/vite-plugin";
 import packageJson from "../package.json";
 
-const manifest: ManifestType = {
+// Convert from Semver (example: 0.1.0-beta6)
+const [major, minor, patch, label = "0"] = packageJson.version
+  // can only contain digits, dots, or dash
+  .replace(/[^\d.-]+/g, "")
+  // split into version parts
+  .split(/[.-]/);
+
+const manifest = defineManifest(async () => ({
   manifest_version: 3,
   name: packageJson.displayName ?? packageJson.name,
-  version: packageJson.version,
+  version: `${major}.${minor}.${patch}.${label}`,
   description: packageJson.description,
   options_page: "src/pages/options/index.html",
-  background: { service_worker: "src/pages/background/index.js" },
+  background: { service_worker: "src/pages/background/index.ts" },
   action: {
     default_popup: "src/pages/popup/index.html",
     default_icon: "icons/34x34.png",
@@ -21,8 +28,8 @@ const manifest: ManifestType = {
   content_scripts: [
     {
       matches: ["http://*/*", "https://*/*", "<all_urls>"],
-      js: ["src/pages/content/index.js"],
-      css: ["assets/css/contentStyle.chunk.css"],
+      js: ["src/pages/content/index.ts"],
+      // css: ["assets/css/contentStyle.chunk.css"],
     },
   ],
   devtools_page: "src/pages/devtools/index.html",
@@ -32,6 +39,6 @@ const manifest: ManifestType = {
       matches: ["*://*/*"],
     },
   ],
-};
+}));
 
 export default manifest;
