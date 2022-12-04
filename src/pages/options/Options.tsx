@@ -1,4 +1,5 @@
 import logo from "@assets/img/logo.svg";
+import "@src/styles/index.css";
 import styles from "./Options.module.css";
 
 const Options = () => {
@@ -6,7 +7,7 @@ const Options = () => {
     <div class={styles.App}>
       <header class={styles.header}>
         <img src={logo} class={styles.logo} alt="logo" />
-        <p>
+        <p class="font-bold">
           Edit <code>src/pages/options/Options.tsx</code> and save to reload.
         </p>
         <a
