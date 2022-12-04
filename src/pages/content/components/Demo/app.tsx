@@ -13,7 +13,7 @@ const App = () => {
             alt="logo"
           />
           <p class="flex flex-wrap font-bold">
-            Edit <code>src/pages/content/Demo.tsx</code> and save to reload.
+            Edit <code>src/pages/content/index.tsx</code> and save to reload.
           </p>
           <a
             href="https://github.com/solidjs/solid"
